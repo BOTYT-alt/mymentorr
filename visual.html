@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Learning - MyMentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MyMentor</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="visual.html">Visual Learning</a>
+            <a href="audio.html">Audio Learning</a>
+            <a href="ai.html">AI Mentor</a>
+        </nav>
+    </header>
+
+    <div class="info-overlay">
+        <h3>Visual Learning Hub</h3>
+        <p>Images update dynamically based on your topics. The more specific your query, the better the visualization!</p>
+    </div>
+
+    <section class="page">
+        <div class="content-section animated-content">
+            <h2>Visual Learning Experience</h2>
+            <p>Transform complex topics into clear, memorable visuals. Our system adapts to your learning style.</p>
+            
+            <div class="hud-panel" style="margin: 20px 0;">
+                <h3>Generate a Visual on Your Topic</h3>
+                <input type="text" id="visualTopic" placeholder="Enter a topic, e.g., Quantum Physics, Nature, Technology" />
+                <button class="btn primary" onclick="generateVisual()">Generate Visual</button>
+            </div>
+
+            <div id="visualResult" class="animated-content"></div>
+        </div>
+
+        <div class="content-section animated-content">
+            <h2>Visual Learning Tips</h2>
+            <ul class="rules-list">
+                <li>Start with broad topics, then narrow down</li>
+                <li>Look for patterns and connections in images</li>
+                <li>Take notes about what you observe</li>
+                <li>Create mind maps to connect concepts</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 MyMentor. Visualize your learning journey.</p>
+    </footer>
+</body>
+</html>

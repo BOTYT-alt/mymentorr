@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyMentor - Dynamic Learning Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MyMentor</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="visual.html">Visual Learning</a>
+            <a href="audio.html">Audio Learning</a>
+            <a href="ai.html">AI Mentor</a>
+        </nav>
+    </header>
+
+    <div class="info-overlay">
+        <h3>Welcome to MyMentor</h3>
+        <p>Your experience will evolve as you spend more time here. Watch the background and theme change every 5 minutes!</p>
+    </div>
+
+    <section class="hero animated-content">
+        <div class="hero-content">
+            <h2>Dynamic Learning Experience</h2>
+            <p>Discover your potential through our adaptive learning environment that evolves with you.</p>
+            <div class="cta-buttons">
+                <a href="ai.html" class="btn primary">Start Learning</a>
+                <a href="visual.html" class="btn secondary">Explore Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page">
+        <div class="content-grid">
+            <div class="content-section animated-content">
+                <h2>Neural Enhancement Protocol</h2>
+                <ul class="rules-list">
+                    <li class="rule-card">
+                        <span class="rule-icon">🧠</span>
+                        <h3>Neural Sync</h3>
+                        <p>Optimize your learning patterns through AI-guided focus sessions</p>
+                    </li>
+                    <li class="rule-card">
+                        <span class="rule-icon">⚡</span>
+                        <h3>Quantum Learning</h3>
+                        <p>Access breakthrough methods for rapid skill acquisition</p>
+                    </li>
+                    <li class="rule-card">
+                        <span class="rule-icon">🌌</span>
+                        <h3>Mind Expansion</h3>
+                        <p>Unlock hidden potential through advanced cognitive techniques</p>
+                    </li>
+                    <li class="rule-card">
+                        <span class="rule-icon">🎯</span>
+                        <h3>Precision Focus</h3>
+                        <p>Achieve laser-sharp concentration with neural feedback</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-section animated-content">
+                <h2>Neural Interface Tasks</h2>
+                <div class="todo-container">
+                    <div class="progress-ring">
+                        <svg class="progress-ring__circle" width="120" height="120">
+                            <circle class="progress-ring__path" stroke="var(--primary)" stroke-width="4" fill="transparent" r="52" cx="60" cy="60"/>
+                        </svg>
+                        <div class="progress-ring__text">
+                            <span id="completionRate">0</span>%
+                        </div>
+                    </div>
+                    <div id="todoList" class="enhanced-todo-list"></div>
+                    <div class="task-input-container">
+                        <input type="text" id="newTodo" placeholder="Initialize new neural task..." class="futuristic-input">
+                        <button onclick="todoList.addTodo(document.getElementById('newTodo').value)" class="btn primary">
+                            <span class="btn-effect"></span>
+                            <span class="btn-text">Synchronize Task</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Extensive Context Block: lots of explanatory text + images from Unsplash -->
+        <div class="content-section animated-content" id="extended-context">
+            <h2>Extended Context & Visual References</h2>
+            <p>This section intentionally contains a large amount of contextual information, curated visual references, and explanatory prose to give the interface a rich, research-grade feel. Content is grouped into thematic modules (design rationale, learning philosophy, UX patterns, imagery and visual references, and implementation notes). Each image is pulled from Unsplash to keep visuals authentic and high-resolution.</p>
+
+            <h3>Design Rationale</h3>
+            <p>Our visual language uses glassmorphism to communicate depth and focus. Neon accents signal interactivity and system state. Animations are purposeful and functional: subtle parallax, holographic gradients, and micro-interactions guide the user's attention while preserving readability. This approach balances aesthetics with clarity and accessibility.</p>
+
+            <figure class="visual-figure">
+                <img src="https://source.unsplash.com/1600x900/?futuristic,interface" alt="Futuristic interface" />
+                <figcaption>Source: Unsplash — futuristic interface (used to inspire HUD and control surfaces)</figcaption>
+            </figure>
+
+            <h3>Learning Philosophy</h3>
+            <p>We emphasize active recall, spaced repetition, and multimodal presentation. Visualizations (diagrams, annotated images), audio summaries, and short interactive tasks improve retention. The system adapts content density depending on session time and user performance metrics, offering lighter or deeper content depending on cognitive load indicators.</p>
+
+            <figure class="visual-figure">
+                <img src="https://source.unsplash.com/1600x900/?cyberpunk,city" alt="Cyberpunk city skyline" />
+                <figcaption>Source: Unsplash — cyberpunk city (aesthetic reference for ambient backgrounds)</figcaption>
+            </figure>
+
+            <h3>UX Patterns and Interaction Notes</h3>
+            <p>Key interactions include: draggable HUD panels for personal workspace layout, sticky micro-widgets for session info, and contextual help overlays. Buttons and controls are intentionally large with generous hit areas (mobile-first), and visually reinforced with glow and depth on hover. Keyboard shortcuts and minimal animations reduce cognitive overhead for power users.</p>
+
+            <figure class="visual-figure">
+                <img src="https://source.unsplash.com/1600x900/?technology,abstract" alt="Abstract technology" />
+                <figcaption>Source: Unsplash — abstract technology (used for hero and content imagery)</figcaption>
+            </figure>
+
+            <h3>Implementation Notes</h3>
+            <p>The page loads images from the Unsplash source endpoint (no API key required) for rapid prototyping. For production, replace these with CDN-hosted, optimized assets or implement proper Unsplash API usage and caching to respect rate limits and licensing. The scripts create particle systems and holographic HUD animations; these are intentionally lightweight but can be offloaded to WebGL for even better performance on high-end builds.</p>
+
+            <h3>Deep Context — Conceptual Background</h3>
+            <p>Human learning benefits from coherent context. We provide layered context: a short summary, a mid-length explanation, and a long-form deep-dive. Presenting all three increases the chance the reader will find an explanation matching their prior knowledge.</p>
+            <p>Long-form (example): The neural enhancement protocol is a conceptual framework for structuring study sessions using alternating phases of focused retrieval and synthesis. Begin with a 10-minute focused retrieval session using only memory prompts. Follow with a 5-minute synthesis period where the learner organizes the retrieved information into a visual map or bullet list. Repeat the cycle with increasing intervals and a progressively broader context. This pattern mirrors spacing and testing effects from cognitive psychology, and pairs well with multimodal reinforcement (audio recap + visual diagram).</p>
+
+            <h3>Reference Gallery</h3>
+            <div class="image-gallery">
+                <figure>
+                    <img src="https://source.unsplash.com/800x500/?space,galaxy" alt="Space galaxy" />
+                    <figcaption>Unsplash — space galaxy</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/800x500/?laboratory,technology" alt="Laboratory technology" />
+                    <figcaption>Unsplash — laboratory technology</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/800x500/?neon,architecture" alt="Neon architecture" />
+                    <figcaption>Unsplash — neon architecture</figcaption>
+                </figure>
+            </div>
+
+            <h3>Practical Tips</h3>
+            <ol>
+                <li>Start with short, focused sessions and gradually increase complexity.</li>
+                <li>Use the todo system to break long goals into atomic learning steps.</li>
+                <li>Reflect for 2–3 minutes after each session and annotate visuals.</li>
+                <li>Leverage the AI mentor for immediate clarifications and examples.</li>
+            </ol>
+
+            <p class="note">Note: Images are dynamically pulled for prototyping. If you want a curated, licensed set of images, I can add a small JSON manifest and local copies (recommended for performance and compliance).</p>
+        </div>
+
+        <div class="achievement-section animated-content">
+            <h2>Neural Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌟</div>
+                    <h3>Quantum Learner</h3>
+                    <div class="achievement-progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">💫</div>
+                    <h3>Mind Master</h3>
+                    <div class="achievement-progress">
+                        <div class="progress-bar" style="width: 45%"></div>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🔮</div>
+                    <h3>Neural Pioneer</h3>
+                    <div class="achievement-progress">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 MyMentor. Experience the future of learning.</p>
+    </footer>
+</body>
+</html>

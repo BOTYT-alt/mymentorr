@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Learning - MyMentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MyMentor</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="visual.html">Visual Learning</a>
+            <a href="audio.html">Audio Learning</a>
+            <a href="ai.html">AI Mentor</a>
+        </nav>
+    </header>
+
+    <div class="info-overlay">
+        <h3>Audio Learning Center</h3>
+        <p>Experience dynamic audio lessons that adapt to your learning pace and preferences.</p>
+    </div>
+
+    <section class="page">
+        <div class="content-section animated-content">
+            <h2>Audio Learning Experience</h2>
+            <p>Immerse yourself in knowledge through carefully crafted audio lessons that evolve with your understanding.</p>
+            
+            <div class="hud-panel" style="margin: 20px 0;">
+                <h3>Generate an Audio Lesson</h3>
+                <input type="text" id="audioTopic" placeholder="Enter a topic, e.g., Ancient Civilizations, Science" />
+                <button class="btn primary" onclick="generateAudio()">Generate Audio</button>
+            </div>
+
+            <div id="audioResult" class="animated-content"></div>
+        </div>
+
+        <div class="content-section animated-content">
+            <h2>Effective Listening Strategies</h2>
+            <ul class="rules-list">
+                <li>Find a quiet space for better focus</li>
+                <li>Take brief notes while listening</li>
+                <li>Pause and reflect between sections</li>
+                <li>Practice active listening techniques</li>
+            </ul>
+        </div>
+
+        <div class="content-section animated-content">
+            <h2>Your Audio Learning Progress</h2>
+            <div class="todo-container">
+                <div id="audioProgress">
+                    <div class="todo-item">
+                        <span>🎧 Topics Explored: <span id="topicsCount">0</span></span>
+                    </div>
+                    <div class="todo-item">
+                        <span>⏱️ Total Listening Time: <span id="listenTime">0:00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 MyMentor. Listen, learn, and grow.</p>
+    </footer>
+</body>
+</html>

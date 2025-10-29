@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Mentor - MyMentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MyMentor</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="visual.html">Visual Learning</a>
+            <a href="audio.html">Audio Learning</a>
+            <a href="ai.html">AI Mentor</a>
+        </nav>
+    </header>
+
+    <div class="info-overlay">
+        <h3>AI Mentor Interface</h3>
+        <p>Your personal AI mentor adapts its responses based on your learning progress and preferences.</p>
+    </div>
+
+    <section class="page">
+        <div class="content-section animated-content">
+            <h2>Interactive Learning Assistant</h2>
+            <p>Engage in meaningful conversations with your AI mentor for personalized guidance and support.</p>
+            
+            <div class="chat-box" id="chatBox"></div>
+
+            <div class="hud-panel" style="margin: 20px 0;">
+                <input type="text" id="userInput" placeholder="Ask your question..." />
+                <button class="btn primary" onclick="sendMessage()">Send Message</button>
+            </div>
+        </div>
+
+        <div class="content-section animated-content">
+            <h2>Learning Analytics</h2>
+            <div class="todo-container">
+                <div class="todo-item">
+                    <span>📚 Topics Discussed: <span id="topicCount">0</span></span>
+                </div>
+                <div class="todo-item">
+                    <span>💡 Questions Answered: <span id="questionCount">0</span></span>
+                </div>
+                <div class="todo-item">
+                    <span>🎯 Learning Goals Completed: <span id="goalsCount">0</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section animated-content">
+            <h2>Interaction Guidelines</h2>
+            <ul class="rules-list">
+                <li>Ask specific questions for better responses</li>
+                <li>Use follow-up questions to dig deeper</li>
+                <li>Share your learning preferences</li>
+                <li>Request examples when needed</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 MyMentor. Your AI learning companion.</p>
+    </footer>
+</body>
+</html>
